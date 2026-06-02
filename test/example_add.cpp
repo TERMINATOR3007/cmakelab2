@@ -6,4 +6,10 @@ TEST(example, add)
     double res;
     res = add_numbers(1.0, 2.0);
     ASSERT_NEAR(res, 3.0, 1.0e-11);
+
+    res = add_numbers(1.0, -1.0);
+    ASSERT_NEAR(res, 0.0, 1.0e-11); 
+
+    res = add_numbers(1.0, -2.0);
+    ASSERT_NEAR(res, -1.0, 1.0e-11); 
 }
